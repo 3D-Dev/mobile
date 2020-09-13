@@ -1,0 +1,916 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Webdev portfolio'>
+  <meta property='og:url' content='URL入る'>
+  <meta property='og:description' content="Webdev team's portfolio">
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Webdev team's portfolio" />
+  <title>Webdev portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/portfolio.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/logo2.jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150847391-2"></script>-->
+  <style>
+  /* Make the image fully responsive */
+  
+  .gallery-title{
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    position:absoltute;
+    color:white;
+    left:0px;
+    width:100%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 47px; 
+  }
+  
+  .pswp__caption { left: 0; width: 250px; right: auto; top: 44px; }
+  .pswp__caption__center{
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.8px;
+    word-break: break-all;
+  }
+
+  .card:hover, .card:focus {
+    -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
+    border-top: 2px solid #007bff;
+    top: -2px; }
+  .card *:last-child {
+    margin-bottom: 0; }
+  .card h3 {
+    font-size: 1.1rem;
+    color: #000; }
+  .card p {
+    color: #999999;
+    font-size: 1rem; 
+    }
+
+  .detail-subject{
+    font-weight: bold;
+    margin-bottom:0px !important;
+  }
+  .detail-overview{
+    margin-left:5px;
+    color:#dddddd;
+  }
+  .detail-responsible{
+    margin-left:5px;
+    color:#dddddd;
+  }
+  .detail-skills{
+    margin-left:5px;
+    color:#dddddd;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="logo">
+        <span class="logo-title">Android/iOS/React Native Developer</span>
+        <span class="logo-desc">dev.solution888@gmail.com</span>
+      </h1>
+    </header>
+    <nav id="gnav">
+      <ul>
+        <li><i class="fas fa-user fa-lg"><a href="#Profile">PROFILE</a></i></li>
+        <li><i class="fas fa-lightbulb fa-lg"><a href="#skill">SKILL</a></i></li>
+        <li><i class="fas fa-tasks fa-lg"><a href="#works">WORKS</a></i></li>
+        <li><i class="fas fa-envelope fa-lg"><a href="#contact">CONTACT</a></i></li>
+      </ul>
+    </nav>
+    <main id="contents">
+
+      <section class="section" id="Profile">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title"><i class="fas fa-user"><span class="section-title-css">PROFILE</span></i></h2>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image profile">
+              <img src="img/profile/profile.JPG" alt="">
+            </div>
+            <div class="two-column-desc">
+              <p class="text" style="font-size: 1.2em;">
+              I have worked with iOS and Android for a long time, way before Swift. I love both worlds equally and I can definitely help you create apps that your users will love.
+
+For iOS, I prefer Swift, it's a great language and recommended by Apple for building native iOS apps, I have done multiple apps with Swift. For Android, I have been using Kotlin lately, but I also have a lot of experience with Java. I have been leaning towards Kotlin because it's gaining momentum and I dont want to fall behind! I also use React Native, sometimes using React Native makes more sense over Swift because it compiles down to both iOS and Android.
+
+I have also a lot of experience integration various APIs, working with on-device sensors, various kit such as HomeKit, HealthKit, etc.
+
+I also have experience with Google's Firebase and Facebook's Parse.
+
+For app distribution, I have used various distribution platforms such as TestFlight and Hockey. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skill">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title"><i class="fas fa-lightbulb fa-lg"><span class="section-title-css">SKILL</span></i></h2>
+            <p class="section-desc"></p>
+          </div>
+          <div class="card-wrapper">
+
+            <div class="card">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title"><i class="fas fa-desktop"></i>Front-end</h3>
+                <p>Recent years, using React, Vue.js</p>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Skill</th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">javascrpt</th>
+                      <td>5 years</td>
+                      <td><span class="rating"><p class="rate rate5"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">jQuery</th>
+                      <td>5 years</td>
+                      <td><span class="rating"><p class="rate rate3"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">AngularJS</th>
+                      <td >2 years</th>
+                      <td><span class="rating"><p class="rate rate4"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">React</th>
+                      <td >2 years</th>
+                      <td><span class="rating"><p class="rate rate5"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Vue.js</th>
+                      <td >2 years</th>
+                      <td><span class="rating"><p class="rate rate4"></p></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title"><i class="fas fa-desktop"></i>Back-end</h3>
+                <p>Mainly using Laravel, Node Express</p>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Skill</th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">php5.6,7(Laravel)</th>
+                      <td>5 years</td>
+                      <td><span class="rating"><p class="rate rate5"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Laravel</th>
+                      <td>2 years</td>
+                      <td><span class="rating"><p class="rate rate4"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CodeIgniter</th>
+                      <td>3 years</td>
+                      <td><span class="rating"><p class="rate rate5"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Node.js</th>
+                      <td>2 years</td>
+                      <td><span class="rating"><p class="rate rate4"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Ruby on Rails</th>
+                      <td>1 years</td>
+                      <td><span class="rating"><p class="rate rate3"></p></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title"><i class="fas fa-database"></i>DB</h3>
+                <p>MySQL was the best option.</p>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Skill</th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">MySQL</th>
+                      <td>5 years</td>
+                      <td><span class="rating"><p class="rate rate5"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Postgres SQL</th>
+                      <td>3 years</td>
+                      <td><span class="rating"><p class="rate rate4"></p></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title"><i class="fas fa-server"></i>Web hosting</h3>
+                <p>Using AWS, EC2, RDS, CloudWatch.</p>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Skill</th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Apache</th>
+                      <td>5 years</td>
+                      <td><span class="rating"><p class="rate rate5"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">AWS(EC2、RDS, etc)</th>
+                      <td>2 years</td>
+                      <td><span class="rating"><p class="rate rate4"></p></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title"><i class="fas fa-mobile"></i>Mobile App</h3>
+                <p>iOS, Android</p>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Skill</th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">XCode</th>
+                      <td>3 years</td>
+                      <td><span class="rating"><p class="rate rate3"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Objective C++</th>
+                      <td>5 years</td>
+                      <td><span class="rating"><p class="rate rate5"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Swift</th>
+                      <td>2 years</td>
+                      <td><span class="rating"><p class="rate rate4"></p></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Android SDK</th>
+                      <td>3 years</td>
+                      <td><span class="rating"><p class="rate rate3"></p></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title"><i class="fas fa-balance-scale"> BlockChain</i></h3>
+                <p>Crypto currecy exchange</p>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Exchange</th>
+                      <th scope="col">Skills</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Binance</th>
+                      <td scope="row">CCXT</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Huobi</th>
+                      <td scope="row">Arbitrage Bot</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bittrex</th>
+                      <td scope="row">Exchange API</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Poloniex</th>
+                      <td scope="row"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="works">
+          <div class="section-title-block">
+            <h2 class="section-title"><i class="fas fa-tasks fa-lg"><span class="section-title-css">WORKS</span></i></h2>
+            <div class="section-desc"></div>
+          </div>
+          <div style="background-image: url(./img/1.jpg);">
+            <div class="inner_works">
+              <div class="row">
+              <div class="wrap col-md-7 windowcon">
+                <a target="_blank" onclick="onWork(1)">
+                  <div class="img_container" style="color: #222222">
+                    <img src="img/works/sleep/1.jpg" alt="Weather forecast app"
+                         class="image sweep-in sweep" />
+                    <img src="img/works/sleep/2.jpg" alt="Weather forecast app"
+                         class="image sweep-in sweep" />
+                    <img src="img/works/sleep/3.jpg" alt="Weather forecast app"
+                         class="image sweep-in sweep" />
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-5">
+                <p class="thumb-desc" style="font-size: 1.5em; color: #FFFFFF;">
+                  <strong><a href="https://play.google.com/store/apps/details?id=calm.sleep.headspace.relaxingsounds&hl=en_US"
+                             target="_blank">Sleep App</a></strong>
+                             is the world’s only free sleep app for relaxing sleep sounds and ambiences that will improve your sleep or make your short naps more effective. Sleep sounds in our app are recommended & verified by top sleep experts. Try these guided meditation through relaxing music that reduces anxiety. Perfect life-changing app for beginners who can take up 5 minutes, 10 minutes, 30 minutes, 60 minutes sessions to achieve mindfulness.
+                  <a href="https://solutiondev888.github.io/webdevteam/"
+                     target="_blank" style="color: initial; text-decoration:underline;">GitHub</a>.
+                </p>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="wrap col-md-7 windowcon">
+                  <a target="_blank" onclick="onWork(1)">
+                    <div class="img_container" style="color: #222222">
+                      <img src="img/works/sleep/1.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                      <img src="img/works/sleep/2.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                      <img src="img/works/sleep/3.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <p class="thumb-desc" style="font-size: 1.5em; color: #FFFFFF;">
+                    <strong><a href="https://play.google.com/store/apps/details?id=calm.sleep.headspace.relaxingsounds&hl=en_US"
+                               target="_blank">Sleep App</a></strong>
+                               is the world’s only free sleep app for relaxing sleep sounds and ambiences that will improve your sleep or make your short naps more effective. Sleep sounds in our app are recommended & verified by top sleep experts. Try these guided meditation through relaxing music that reduces anxiety. Perfect life-changing app for beginners who can take up 5 minutes, 10 minutes, 30 minutes, 60 minutes sessions to achieve mindfulness.
+                    <a href="https://solutiondev888.github.io/webdevteam/"
+                       target="_blank" style="color: initial; text-decoration:underline;">GitHub</a>.
+                  </p>
+                </div>
+                </div>
+
+              <div class="row">
+                <div class="wrap col-md-7 windowcon">
+                  <a target="_blank" onclick="onWork(1)">
+                    <div class="img_container" style="color: #222222">
+                      <img src="img/works/sleep/1.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                      <img src="img/works/sleep/2.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                      <img src="img/works/sleep/3.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <p class="thumb-desc" style="font-size: 1.5em; color: #FFFFFF;">
+                    <strong><a href="https://play.google.com/store/apps/details?id=calm.sleep.headspace.relaxingsounds&hl=en_US"
+                               target="_blank">Sleep App</a></strong>
+                               is the world’s only free sleep app for relaxing sleep sounds and ambiences that will improve your sleep or make your short naps more effective. Sleep sounds in our app are recommended & verified by top sleep experts. Try these guided meditation through relaxing music that reduces anxiety. Perfect life-changing app for beginners who can take up 5 minutes, 10 minutes, 30 minutes, 60 minutes sessions to achieve mindfulness.
+                    <a href="https://solutiondev888.github.io/webdevteam/"
+                       target="_blank" style="color: initial; text-decoration:underline;">GitHub</a>.
+                  </p>
+                </div>
+                </div>
+
+              <!-- video and image -->
+              <div class="row">
+                <div class="wrap col-md-7">
+                  <a target="_blank">
+                    <div class="image-wrap" style="color: #222222; width: 100%;">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/IAQyXi12ogs?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </a>
+                </div>
+                <div class="last-desc desc col-md-5">
+                  <p class="thumb-desc">
+                    <strong>Weather App</strong>
+                    is a web application that forecasts the weather for locations
+                    across the globe.  It gathers data from
+                    openweathermap.org to display both the current and 5 day / 3 hour
+                    weather forecast details.
+                    This mobile-friendly, responsive site was built with React, a
+                    Javascript library.  React-Bootstrap was also utilized.
+                    View the source code on
+                    <a href="https://solutiondev888.github.io/webdevteam/"
+                       target="_blank" style="color: initial; text-decoration:underline;">GitHub</a>.
+                  </p>
+                </div>
+              </div>
+
+<!--              <div class="card-wrapper my-gallery">-->
+
+<!--              <figure class="card">-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/toesox/1.jpg" alt=""  onclick="onWork(1)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">Toesox</p>-->
+<!--                  <p class="card-caption-info">Socks Shop Site</p>-->
+<!--                  <p class="card-caption-info">HTML/CSS/Magento</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://www.toesox.com" target="_blank">live view</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/DUSK/1.jpg" alt="" onclick="onWork(2)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">D U S K</p>-->
+<!--                  <p class="card-caption-info">Luxury Bedding Shop Site</p>-->
+<!--                  <p class="card-caption-info">HTML/CSS/Magento</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://dusk.com/" target="_blank">live view</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/aspace/1.jpg" alt="" onclick="onWork(3)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">a ★ space</p>-->
+<!--                  <p class="card-caption-info">Children’s Furniture Shop Site</p>-->
+<!--                  <p class="card-caption-info">HTML/CSS/Magento/Laravel</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://www.aspace.co.uk" target="_blank">live view</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/assesment/1.jpg" alt="" onclick="onWork(4)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">アセスメント管理システム</p>-->
+<!--                  <p class="card-caption-info">Assessment Management System</p>-->
+<!--                  <p class="card-caption-info">HTML/CSS/Angular/CodeIgniter</p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/threadbbs/1.jpg" alt="" onclick="onWork(5)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">スレッド議論ツール</p>-->
+<!--                  <p class="card-caption-info">Thread Forum Tool</p>-->
+<!--                  <p class="card-caption-info">HTML/CSS/Angular/CodeIgniter</p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/HandCrowd/1.jpg" alt="" onclick="onWork(6)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">ハンドクラウド</p>-->
+<!--                  <p class="card-caption-info">Handcrowd</p>-->
+<!--                  <p class="card-caption-info">HTML/CSS/Angular/CodeIgniter</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://www.handcrowd.com" target="_blank">live view</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/price_compare/1.jpg" alt="" onclick="onWork(7)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">最低価格</p>-->
+<!--                  <p class="card-caption-info">Price Compare Site</p>-->
+<!--                  <p class="card-caption-info">HTML/CSS/Angular/Laravel</p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/vaunt/2.jpg" alt="" onclick="onWork(8)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">Vaunt</p>-->
+<!--                  <p class="card-caption-info">Vaunt is a streaming video service.</p>-->
+<!--                  <p class="card-caption-info">iOS/Android</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://appadvice.com/app/vaunt/1145877032" target="_blank">live view</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/videostream/1.jpg" alt="" onclick="onWork(9)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">Broadcast me</p>-->
+<!--                  <p class="card-caption-info">Stream live with BroadcastMe on YouTube live, Facebook live, Twitch or any RTMP compatibe service</p>-->
+<!--                  <p class="card-caption-info">iOS/GoCoder</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://apps.apple.com/us/app/broadcast-me/id491982406" target="_blank">App Store</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/mediahub.jpg" alt="" onclick="onWork(10)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">MediaHub</p>-->
+<!--                  <p class="card-caption-info">Media hub is the application to watch your favourite videos.</p>-->
+<!--                  <p class="card-caption-info">Android/Youtube/Video player</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://apkpure.com/media-hub/com.uniwic.mediahub" target="_blank">Google Play</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--              <figure class="card" >-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/fanproj.jpg" alt="" onclick="onWork(11)"/>-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">Fanproj</p>-->
+<!--                  <p class="card-caption-info">HD video streaming app.</p>-->
+<!--                  <p class="card-caption-info">Android/Web/Video player</p>-->
+<!--                  <p class="card-caption-url"><a class="url-link" href="https://play.google.com/store/apps/details?id=com.fanproj.fanprojplay&hl=en_SG" target="_blank">Google Play</a></p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--              <figure class="card">-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/bitcoin/1.jpg" alt="" />-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">Bitcoin Mining</p>-->
+<!--                  <p class="card-caption-info">Automatic Bitcoin Mining System</p>-->
+<!--                  <p class="card-caption-info">Poloniex / Bittrex / Binance / OKEx</p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--              <figure class="card">-->
+<!--                &lt;!&ndash; <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> &ndash;&gt;-->
+<!--                <img class="card-image" src="img/works/bitcoin/3.jpg" alt="" />-->
+<!--                &lt;!&ndash; </a> &ndash;&gt;-->
+<!--                <figcaption class="card-caption">-->
+<!--                  <p class="card-caption-title">Arbitrage Trading Bot – R3</p>-->
+<!--                  <p class="card-caption-info">Bitcoin Arbitrage Trading Bot</p>-->
+<!--                  <p class="card-caption-info">BitFlyerss / Quoine / Coincheck / Bittrex / Binance</p>-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+
+<!--            </div>-->
+            </div>
+          </div>
+          <!-- only image -->
+
+      </section>
+
+
+      <section class="section">
+        <div id="contact">
+          <div class="inner">
+            <div class="section-title-block">
+              <h2 class="section-title"><i class="fas fa-envelope fa-lg"><span class="section-title-css">CONTACT</span></i></h2>
+              <div class="section-desc"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div id="glyphs" class="col-sm-6">
+                <p>Do you need something or want to work together?</p>
+                <p>Get in touch.</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>
+                  <a href="mailto:info@adfranks.com"> yr199111ry@outlook.com</a></p>
+              </div>
+              <div class="col-sm-6">
+                <form action="mailto:yr199111ry@outlook.com" method="post" role="form">
+                  <div class="form-group">
+                    <label class="sr-only" name="name" for="name">Name:</label>
+                    <input type="text" class="form-control input-lg flip-in flip"
+                           id="name" name="name" placeholder="Name" required>
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" name="email" for="email">
+                      Email address:
+                    </label>
+                    <input type="email" class="form-control input-lg flip-in flip"
+                           id="email" name="email" placeholder="Email" required>
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="comment">Message:</label>
+                    <textarea class="form-control input-lg flip-in flip" rows="5"
+                              id="comment" name="comment" placeholder="Message"></textarea>
+                    <span class="error"></span>
+                  </div>
+                  <button type="submit" value="submit" class="btn btn-default
+          btn-lg text-uppercase pull-right flip-in flip btn_submit">submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <nav class="footer-link">
+          <ul>
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="content-wr">
+          <div class="socicon flex">
+            <a href="https://www.linkedin.com/in/oksana-melnyk-4a5086155/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="36px" height="36px">
+                <g id="surface1">
+                  <path style=" fill:#0288D1;" d="M 42 37 C 42 39.761719 39.761719 42 37 42 L 11 42 C 8.238281 42 6 39.761719 6 37 L 6 11 C 6 8.238281 8.238281 6 11 6 L 37 6 C 39.761719 6 42 8.238281 42 11 Z "/>
+                  <path style=" fill:#FFFFFF;" d="M 12 19 L 17 19 L 17 36 L 12 36 Z "/>
+                  <path style=" fill:#FFFFFF;" d="M 14.484375 17 L 14.457031 17 C 12.964844 17 12 15.886719 12 14.5 C 12 13.078125 12.996094 12 14.515625 12 C 16.035156 12 16.972656 13.078125 17 14.5 C 17 15.886719 16.035156 17 14.484375 17 Z "/>
+                  <path style=" fill:#FFFFFF;" d="M 36 36 L 31 36 L 31 26.902344 C 31 24.703125 29.773438 23.203125 27.808594 23.203125 C 26.308594 23.203125 25.496094 24.214844 25.101563 25.191406 C 24.957031 25.542969 25 26.511719 25 27 L 25 36 L 20 36 L 20 19 L 25 19 L 25 21.617188 C 25.722656 20.5 26.851563 19 29.738281 19 C 33.316406 19 36 21.25 36 26.273438 Z "/></g>
+              </svg>
+            </a>
+            <a href="skype:matutamiller">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="32px" height="32px">
+					<circle style="fill:#03A9F4;" cx="24" cy="24" r="20"/>
+                <circle style="fill:#03A9F4;" cx="33.5" cy="33.5" r="11.5"/>
+                <circle style="fill:#03A9F4;" cx="14.5" cy="14.5" r="11.5"/>
+                <path style="fill:#FFFFFF;" d="M24.602,36C18,36,15,32.699,15,30.199C15,28.898,15.898,28,17.199,28  c2.801,0,2.102,4.102,7.402,4.102c2.699,0,4.199-1.5,4.199-3c0-0.902-0.402-1.902-2.199-2.402l-5.902-1.5  C16,24,15.102,21.398,15.102,18.898c0-5.098,4.699-6.898,9.098-6.898C28.301,12,33,14.199,33,17.199c0,1.301-1,2.102-2.301,2.102  c-2.398,0-2-3.402-6.801-3.402c-2.398,0-3.797,1.102-3.797,2.703c0,1.598,1.898,2.098,3.598,2.5l4.402,1  C32.898,23.199,34,26,34,28.699C33.898,32.898,30.898,36,24.602,36z"/>
+					</svg>
+            </a>
+            <a href="https://web.facebook.com/matie.miller" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="36px" height="36px">
+                <g id="surface1">
+                  <path style=" fill:#3F51B5;" d="M 42 37 C 42 39.761719 39.761719 42 37 42 L 11 42 C 8.238281 42 6 39.761719 6 37 L 6 11 C 6 8.238281 8.238281 6 11 6 L 37 6 C 39.761719 6 42 8.238281 42 11 Z "/>
+                  <path style=" fill:#FFFFFF;" d="M 34.367188 25 L 31 25 L 31 38 L 26 38 L 26 25 L 23 25 L 23 21 L 26 21 L 26 18.589844 C 26.003906 15.082031 27.460938 13 31.59375 13 L 35 13 L 35 17 L 32.714844 17 C 31.105469 17 31 17.601563 31 18.722656 L 31 21 L 35 21 Z "/></g>
+              </svg>
+            </a>
+            <a href="https://github.com/matutamiller" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="36px" height="36px">
+					<g id="surface1_117_">
+					<path style="fill:#FFFFFF;" d="M41,24c0,9.391-7.609,17-17,17S7,33.391,7,24S14.609,7,24,7S41,14.609,41,24z"/>
+                      <path style="fill:#455A64;" d="M21,41v-5.5c0-0.277,0.223-0.5,0.5-0.5s0.5,0.223,0.5,0.5V41h2v-6.5c0-0.277,0.223-0.5,0.5-0.5   s0.5,0.223,0.5,0.5V41h2v-5.5c0-0.277,0.223-0.5,0.5-0.5s0.5,0.223,0.5,0.5V41h1.758C29.914,40.727,30,40.371,30,39.922V35.98   c0-2.164-1.91-5.234-4.25-5.234h-2.5c-2.34,0-4.25,3.074-4.25,5.234v3.941c0,0.449,0.086,0.805,0.242,1.078H21z"/>
+                      <path style="fill:none;stroke:#455A64;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="   M34.617,26.195c0,0,1.914-0.328,3.043-0.305c1.145,0.008,2.441,0.363,2.441,0.363"/>
+                      <path style="fill:none;stroke:#455A64;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="   M34.137,26.813c0,0,2.184-0.203,3.086-0.172c1.254,0.031,2.594,0.414,2.594,0.414"/>
+                      <path style="fill:none;stroke:#455A64;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="   M14.562,26.09c0,0-2.707-0.246-3.551-0.246c-0.852,0-2.453,0.246-3.227,0.465"/>
+                      <path style="fill:none;stroke:#455A64;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="   M15.18,26.934c0,0-2.84-0.262-4.133-0.109c-1.543,0.184-2.895,0.992-2.895,0.992"/>
+                      <path style="fill:#455A64;" d="M14.176,23.461C14.176,19.043,18.793,15,24.5,15c5.695,0,10.324,4.043,10.324,8.461   S31.512,31,24.5,31S14.176,27.879,14.176,23.461z"/>
+                      <path style="fill:#455A64;" d="M28.586,16.313c0,0,1.676-2.313,4.77-2.313c1.234,1.23,0.387,4.758-0.016,5.816L28.586,16.313z"/>
+                      <path style="fill:#455A64;" d="M20.402,16.313c0,0-1.676-2.313-4.758-2.313c-1.23,1.234-0.395,4.762,0.008,5.82L20.402,16.313z"/>
+                      <path style="fill:#455A64;" d="M20.105,35.863c0,0-2.348,0-2.789,0c-1.219,0-2.301-0.535-2.824-1.504   c-0.586-1.082-1.141-2.301-2.586-3.309c-0.254-0.18-0.105-0.441,0.395-0.383c0.488,0.051,1.418,0.16,2.125,1.09   c0.711,0.93,1.48,1.996,2.813,1.996c1.316,0,2.746,0.035,3.465-0.918L20.105,35.863z"/>
+                      <path style="fill:#00BCD4;" d="M24,4C12.951,4,4,12.951,4,24s8.951,20,20,20s20-8.951,20-20S35.049,4,24,4z M24,40.031   C15.16,40.031,7.969,32.84,7.969,24S15.16,7.969,24,7.969S40.031,15.16,40.031,24S32.84,40.031,24,40.031z"/></g>
+					</svg>
+            </a>
+            <a href="mailto:matutamiller@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="32px" height="32px">
+                <g id="surface1">
+                  <path style=" fill:#E0E0E0;" d="M 5.5 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11 C 46 9.066406 44.433594 7.5 42.5 7.5 L 5.5 7.5 C 3.566406 7.5 2 9.066406 2 11 L 2 37 C 2 38.933594 3.566406 40.5 5.5 40.5 Z "/>
+                  <path style=" fill:#D9D9D9;" d="M 26 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11 C 46 9.066406 44.433594 7.5 42.5 7.5 L 5.5 7.5 C 3.566406 7.5 2 9.066406 2 11 Z "/>
+                  <path style=" fill:#EEEEEE;" d="M 6.746094 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11.5 Z "/>
+                  <path style=" fill:#E0E0E0;" d="M 25.746094 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11.5 L 18.769531 31.617188 Z "/>
+                  <path style=" fill:#CA3737;" d="M 42.5 9.5 L 5.5 9.5 C 3.566406 9.5 2 9.066406 2 11 L 2 37 C 2 38.933594 3.566406 40.5 5.5 40.5 L 7 40.5 L 7 12 L 41 12 L 41 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11 C 46 9.066406 44.433594 9.5 42.5 9.5 Z "/>
+                  <path style=" fill:#F5F5F5;" d="M 42.5 7.5 L 5.5 7.5 C 3.566406 7.5 2 9.035156 2 11 C 2 12.207031 3.519531 13.257813 3.519531 13.257813 L 24 27.757813 L 44.480469 13.257813 C 44.480469 13.257813 46 12.207031 46 11 C 46 9.035156 44.433594 7.5 42.5 7.5 Z "/>
+                  <path style=" fill:#E84F4B;" d="M 43.246094 7.582031 L 24 21 L 4.753906 7.582031 C 3.179688 7.917969 2 9.296875 2 11 C 2 12.207031 3.519531 13.257813 3.519531 13.257813 L 24 27.757813 L 44.480469 13.257813 C 44.480469 13.257813 46 12.207031 46 11 C 46 9.296875 44.820313 7.917969 43.246094 7.582031 Z "/></g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="copyright">Copyright&copy;Webdev. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+
+   <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <div class="gallery-title">Toesox(Socks Shop Site)</div>
+
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center">
+            <p class='detail-subject'>Overview:</p>
+            <p class='detail-overview'></p>
+            <p class='detail-subject'>Responsible for:</p>
+            <p class='detail-responsible'></p>
+            <p class='detail-subject'>Skills:</p>
+            <p class='detail-skills'></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script>
+    const image1 = document.querySelector('.windowcon'),
+            container_1 = document.querySelector('.img_container'),
+            slides_1 = container_1.querySelectorAll('img'),
+            slideshow_1 = container_1.querySelectorAll('img').length;
+    let currentIndex = 0;
+    for(i=0; i < slideshow_1; i++){
+      slides_1[i].style.left = `${i*100}%`;
+    }
+
+    function calcul(){
+      for(i=0; i<slideshow_1; i++){
+        if(image1.offsetHeight < slides_1[i].offsetHeight){
+          image1.style.height = slides_1[i].offsetHeight + "px";
+          image1.style.width = slides_1[i].offsetWidth + "px";
+        }
+      }
+    }
+    calcul();
+    var lele = 0;
+    var i = 0;
+    function moveleft(){
+      if(i < slideshow_1-1){
+        lele += 100;
+        i++;
+        container_1.style.transition = '.3s'
+      } else {
+        container_1.style.transition = '0s'
+        lele = 0;
+        i = 0;
+      }
+      container_1.style.left = "-" + lele + "%";
+    }
+
+    function moveevent(){
+      setInterval(moveleft, 1000)
+    }
+
+    moveevent();
+  </script>
+  <script>
+    data = data.replace(/\\n/g, "\\n")  
+                .replace(/\\'/g, "\\'")
+                .replace(/\\"/g, '\\"')
+                .replace(/\\&/g, "\\&")
+                .replace(/\\r/g, "\\r")
+                .replace(/\\t/g, "\\t")
+                .replace(/\\b/g, "\\b")
+                .replace(/\\f/g, "\\f");
+    // remove non-printable and other non-valid JSON chars
+    data = data.replace(/[\u0000-\u0019]+/g,""); 
+    var gdata = JSON.parse(data).data;
+    for(var i = 0; i < gdata.length; i++)
+    {
+      var img_data = [];
+      for(var j = 0; j < gdata[i].imgs.length; j++)
+        img_data.push({"w": 0, "h": 0, "title":true, "src":gdata[i].imgs[j]});
+      gdata[i].imgs = img_data;
+    }
+
+    function onWork(index)
+    {
+      index--;
+      var pswpElement = document.querySelectorAll('.pswp')[0];
+      var title = document.querySelectorAll('.gallery-title')[0];
+      title.innerHTML = gdata[index].title;
+      // build items array
+      var items = gdata[index].imgs;
+
+      // define options (if needed)
+      var options = {
+          // optionName: 'option value'
+          // for example:
+          index: 0, // start at first slide
+          barsSize: {top:44, bottom:0},
+          bgOpacity:0.7,
+          addCaptionHTMLFn: function(item, captionEl, isFake) {
+            var cap_em = $(captionEl.children[0]);
+            cap_em.find(".detail-overview")[0].innerHTML = gdata[index].comment;
+            cap_em.find(".detail-responsible")[0].innerHTML = gdata[index].responsible;
+            cap_em.find(".detail-skills")[0].innerHTML = gdata[index].skills;
+
+            return true;
+        },
+      };
+
+      // Initializes and opens PhotoSwipe
+      var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+
+      gallery.listen('gettingData', function(index, item) {
+          if (!item.w || !item.h) 
+          { // unknown size
+            var img = new Image(); 
+            img.onload = function() { // will get size after load
+              item.w = this.width; // set image width
+              item.h = this.height; // set image height
+                gallery.invalidateCurrItems(); // reinit Items
+                gallery.updateSize(true); // reinit Items
+            }
+            img.src = item.src; // let's download image
+          }
+      });
+
+      gallery.init();
+    }
+
+$(document).ready(function(){
+  //gdata = JSON.parse(data);
+  })
+</script>
+</body>
+</html>
