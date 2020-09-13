@@ -363,33 +363,33 @@ For app distribution, I have used various distribution platforms such as TestFli
           <div style="background-image: url(./img/1.jpg);">
             <div class="inner_works">
               <div class="row">
-              <div class="wrap col-md-7 windowcon">
-                <a target="_blank" onclick="onWork(1)">
-                  <div class="img_container" style="color: #222222">
-                    <img src="img/works/sleep/1.jpg" alt="Weather forecast app"
-                         class="image sweep-in sweep" />
-                    <img src="img/works/sleep/2.jpg" alt="Weather forecast app"
-                         class="image sweep-in sweep" />
-                    <img src="img/works/sleep/3.jpg" alt="Weather forecast app"
-                         class="image sweep-in sweep" />
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-5">
-                <p class="thumb-desc" style="font-size: 1.5em; color: #FFFFFF;">
-                  <strong><a href="https://play.google.com/store/apps/details?id=calm.sleep.headspace.relaxingsounds&hl=en_US"
-                             target="_blank">Sleep App</a></strong>
-                             is the world’s only free sleep app for relaxing sleep sounds and ambiences that will improve your sleep or make your short naps more effective. Sleep sounds in our app are recommended & verified by top sleep experts. Try these guided meditation through relaxing music that reduces anxiety. Perfect life-changing app for beginners who can take up 5 minutes, 10 minutes, 30 minutes, 60 minutes sessions to achieve mindfulness.
-                  <a href="https://solutiondev888.github.io/webdevteam/"
-                     target="_blank" style="color: initial; text-decoration:underline;">GitHub</a>.
-                </p>
-              </div>
+                <div class="wrap col-md-7 windowcon" id="windows_con_1">
+                  <a target="_blank" onclick="onWork(1)">
+                    <div class="img_container" id="img_container_1" style="color: #222222">
+                      <img src="img/works/sleep/1.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                      <img src="img/works/sleep/2.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                      <img src="img/works/sleep/3.jpg" alt="Weather forecast app"
+                           class="image sweep-in sweep" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <p class="thumb-desc" style="font-size: 1.5em; color: #FFFFFF;">
+                    <strong><a href="https://play.google.com/store/apps/details?id=calm.sleep.headspace.relaxingsounds&hl=en_US"
+                               target="_blank">Sleep App</a></strong>
+                               is the world’s only free sleep app for relaxing sleep sounds and ambiences that will improve your sleep or make your short naps more effective. Sleep sounds in our app are recommended & verified by top sleep experts. Try these guided meditation through relaxing music that reduces anxiety. Perfect life-changing app for beginners who can take up 5 minutes, 10 minutes, 30 minutes, 60 minutes sessions to achieve mindfulness.
+                    <a href="https://solutiondev888.github.io/webdevteam/"
+                       target="_blank" style="color: initial; text-decoration:underline;">GitHub</a>.
+                  </p>
+                </div>
               </div>
 
               <div class="row">
-                <div class="wrap col-md-7 windowcon">
+                <div class="wrap col-md-7 windowcon" id="windows_con_2">
                   <a target="_blank" onclick="onWork(1)">
-                    <div class="img_container" style="color: #222222">
+                    <div class="img_container" style="color: #222222" id="img_container_2">
                       <img src="img/works/sleep/1.jpg" alt="Weather forecast app"
                            class="image sweep-in sweep" />
                       <img src="img/works/sleep/2.jpg" alt="Weather forecast app"
@@ -803,11 +803,10 @@ For app distribution, I have used various distribution platforms such as TestFli
   <script type='text/javascript' src="js/script.js"></script>
   <script type="text/javascript" src="data.js"></script>
   <script>
-    const image1 = document.querySelector('.windowcon'),
-            container_1 = document.querySelector('.img_container'),
+    const image1 = document.querySelector('#windows_con_1'),
+            container_1 = document.querySelector('#img_container_1'),
             slides_1 = container_1.querySelectorAll('img'),
             slideshow_1 = container_1.querySelectorAll('img').length;
-    let currentIndex = 0;
     for(i=0; i < slideshow_1; i++){
       slides_1[i].style.left = `${i*100}%`;
     }
@@ -841,6 +840,45 @@ For app distribution, I have used various distribution platforms such as TestFli
     }
 
     moveevent();
+</script>
+<script>
+    const image2 = document.querySelector('#windows_con_2'),
+            container_2 = document.querySelector('#img_container_2'),
+            slides_2 = container_2.querySelectorAll('img'),
+            slideshow_2 = container_2.querySelectorAll('img').length;
+    for(i=0; i < slideshow_2; i++){
+      slides_2[i].style.left = `${i*100}%`;
+    }
+
+    function calcul_2(){
+      for(i=0; i< slideshow_2; i++){
+        if(image2.offsetHeight < slides_2[i].offsetHeight){
+          image2.style.height = slides_2[i].offsetHeight + "px";
+          image2.style.width = slides_2[i].offsetWidth + "px";
+        }
+      }
+    }
+    calcul_2();
+    var lele_2 = 0;
+    var i_2 = 0;
+    function moveleft_2(){
+      if(i_2 < slideshow_2-1){
+        lele_2 += 100;
+        i_2++;
+        container_2.style.transition = '.3s'
+      } else {
+        container_2.style.transition = '0s'
+        lele_2 = 0;
+        i_2 = 0;
+      }
+      container_2.style.left = "-" + lele_2 + "%";
+    }
+
+    function moveevent_2(){
+      setInterval(moveleft_2, 1000)
+    }
+
+    moveevent_2();
   </script>
   <script>
     data = data.replace(/\\n/g, "\\n")  
