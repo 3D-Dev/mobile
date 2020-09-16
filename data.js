@@ -38,6 +38,12 @@ let data = '{ \
 	"comment":"online free service for loans", \
 	"responsible":"Front-end, partial back-end", \
 	"skills":"iOS, Swift, UIKit, RealmDB, Alamofire, Angular", \
+	"imgs":["img/works/loans/2.jpg"] \
+	}, \
+	{"title":"Soccer App", \
+	"comment":"online free service for loans", \
+	"responsible":"Front-end, partial back-end", \
+	"skills":"iOS, Swift, UIKit, GameKit, RealmDB, Alamofire, Angular", \
 	"imgs":[ "img/works/soccer/1.jpg", \
 			"img/works/soccer/2.jpg"] \
 	}, \
